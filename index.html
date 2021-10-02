@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=content-width, initial-scale=1.0">
+    <meta name="decription" content="Number Guessing Game">
+    <meta name="keywords" content="number guessing game, javascript">
+    <meta name="author" content="Jessica">
+    <title>Number Guessing Game</title>
+    
+    <style>
+        body {
+            text-align: center;
+            align-content: center;
+            justify-content: center;
+            margin: 1rem;
+            background-image: linear-gradient(to left, #F1FFE7, #3E885B);
+        }
+        input {
+            text-align: center;
+            align-content: center;
+            justify-content: center;
+        }
+        #container {
+            width: 70vw;
+            margin: auto;
+            margin-top: 160px;
+            background-color: #FFF8F0;
+            border-style: dashed;
+            border-color: #D64933;
+            padding: 1rem;
+        }
+        #inputNum {
+            width: 60vw;
+            height: 8vh;
+            border-radius: 2rem 2rem 2rem 2rem;
+            font-size: 2rem;
+        }
+        #button {
+            width: 30vw;
+            height: 5vh;
+            margin: 2rem;
+            border-radius: 2rem 2rem 2rem 2rem;
+            background-color: #EC0868;
+            color: #F1FFE7;
+            font-size: 2rem;
+        }
+        #result {
+        	width: 60vw;
+        	height: auto;
+        	background-color: #1B998B;
+        	margin: auto;
+        	font-size: 1.5rem;
+        	border-radius: 1rem 1rem 1rem 1rem;
+        	padding: 1rem;
+            color: #F7F7FF;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+    <h1>Number Guessing Game</h1>
+    <h4>Enter number between 1 - 100</h4>
+    <input type="number" id="inputNum"><br/>
+    <h4>You have 5 attempts</h4>
+    <button type="submit" id="button">Guess</button>
+    <div id="result">
+        <ol id="list"></ol>
+    </div>
+</div>
+    <script type = "text/javascript" src = "app.js"> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+</html>
